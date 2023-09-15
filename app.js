@@ -2,30 +2,22 @@ const app = new PIXI.Application({ background: 0x00DD00, height: 600, width:1200
 
 document.body.appendChild(app.view);
 
-const sprite = PIXI.Sprite.from('localhost/imgs/goal1.png');
+const goal1 = PIXI.Sprite.from('./imgs/goal1.png');
+const goal2 = PIXI.Sprite.from('./imgs/goal2.png');
 
-// Set the initial position
-sprite.anchor.set(0.5);
-sprite.x = app.screen.width / 2;
-sprite.y = app.screen.height / 2;
+goal1.anchor.set(0.5);
+goal1.x = app.screen.width * 0.03;
+goal1.y = app.screen.height / 2;
 
-// Opt-in to interactivity
-sprite.eventMode = 'static';
+goal2.anchor.set(0.5);
+goal2.x = app.screen.width * 0.97;
+goal2.y = app.screen.height / 2;
 
-// Shows hand cursor
-sprite.cursor = 'pointer';
+goal1.scale.x *= 0.2;
+goal1.scale.y *= 0.2;
 
-// Pointers normalize touch and mouse (good for mobile and desktop)
-sprite.on('pointerdown', onClick);
+goal2.scale.x *= 0.2;
+goal2.scale.y *= 0.2;
 
-// Alternatively, use the mouse & touch events:
-// sprite.on('click', onClick); // mouse-only
-// sprite.on('tap', onClick); // touch-only
-
-app.stage.addChild(sprite);
-
-function onClick()
-{
-    sprite.scale.x *= 1.25;
-    sprite.scale.y *= 1.25;
-}
+app.stage.addChild(goal1);
+app.stage.addChild(goal2);
