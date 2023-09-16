@@ -1,7 +1,3 @@
-const app = new PIXI.Application({ background: 0x00DD00, height: 600, width:1200 });
-
-document.body.appendChild(app.view);
-
 const goal1 = PIXI.Sprite.from('./imgs/goal1.png');
 const goal2 = PIXI.Sprite.from('./imgs/goal2.png');
 
