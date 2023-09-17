@@ -63,9 +63,6 @@ function move() {
     if (posse(player2, ball)) {
         conduzirP2();
     }
-    pontoP1(ball);
-    pontoP2(ball);
-    fora(ball);
 }
 
 function conduzirP1() {
@@ -157,6 +154,12 @@ function chutarP2() {
     }
     unKeyPress('P2')
 }
+
+setInterval(() => {
+    pontoP1(ball);
+    pontoP2(ball);
+    fora(ball);
+}, 500);
 
 setTimeout(() => {
     app.ticker.add(() => move());

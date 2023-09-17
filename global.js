@@ -1,3 +1,5 @@
+const placar1 = document.querySelector('.P1');
+const placar2 = document.querySelector('.P2');
 var pause = false;
 
 function positionDefault() {
@@ -10,5 +12,7 @@ function positionDefault() {
     player2.x = app.screen.width * 0.55;
     player2.y = app.screen.height / 2;
 
-    pause = false;
+    setTimeout(() => {
+        pause = false;
+    }, 1000);
 }

@@ -27,9 +27,8 @@ function pontoP1(bola) {
 
     if (bBordax >= 1135 && bIniy >= 255 && bBorday <= 360) {
         pause = true;
-        setTimeout(() => {
-            positionDefault();
-        }, 1000);
+        positionDefault();
+        placar1.innerHTML = parseInt(placar1.innerHTML) + 1;
     }
 }
 
@@ -41,9 +40,8 @@ function pontoP2(bola) {
 
     if (bInix <= 70 && bIniy >= 260 && bBorday <= 360) {
         pause = true;
-        setTimeout(() => {
-            positionDefault();
-        }, 1000);
+        positionDefault();
+        placar2.innerHTML = parseInt(placar2.innerHTML) + 1;
     }
 }
 
@@ -75,7 +73,7 @@ function fora(bola) {
     } else if (bordax < 80) {
         setTimeout(() => {
             if (team == 'orange') {
-                if(bola.y > 300) {
+                if (bola.y > 300) {
                     bola.x = 90;
                     bola.y = 50;
                 } else {
@@ -92,7 +90,7 @@ function fora(bola) {
     } else if (inix > 1130) {
         setTimeout(() => {
             if (team == 'purple') {
-                if(bola.y > 300) {
+                if (bola.y > 300) {
                     bola.x = 1110;
                     bola.y = 50;
                 } else {
