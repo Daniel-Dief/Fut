@@ -1,19 +1,19 @@
-const goal1 = PIXI.Sprite.from('./imgs/goal1.png');
-const goal2 = PIXI.Sprite.from('./imgs/goal2.png');
+const trave1 = PIXI.Sprite.from('./imgs/trave1.png');
+const trave2 = PIXI.Sprite.from('./imgs/trave2.png');
 
-goal1.anchor.set(0.5);
-goal1.x = app.screen.width * 0.03;
-goal1.y = app.screen.height / 2;
+trave1.anchor.set(0.5);
+trave1.x = app.screen.width * 0.03;
+trave1.y = app.screen.height / 2;
 
-goal2.anchor.set(0.5);
-goal2.x = app.screen.width * 0.97;
-goal2.y = app.screen.height / 2;
+trave2.anchor.set(0.5);
+trave2.x = app.screen.width * 0.97;
+trave2.y = app.screen.height / 2;
 
-goal1.scale.x *= 0.2;
-goal1.scale.y *= 0.2;
+trave1.scale.x *= 0.2;
+trave1.scale.y *= 0.2;
 
-goal2.scale.x *= 0.2;
-goal2.scale.y *= 0.2;
+trave2.scale.x *= 0.2;
+trave2.scale.y *= 0.2;
 
-app.stage.addChild(goal1);
-app.stage.addChild(goal2);
+app.stage.addChild(trave1);
+app.stage.addChild(trave2);

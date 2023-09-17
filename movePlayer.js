@@ -33,6 +33,8 @@ function move(){
     if(keyPress.ArrowRight){
         player2.x += 3;
     }
+    posse(player1, ball);
+    posse(player2, ball);
 }
 
 app.ticker.add(() => move());
