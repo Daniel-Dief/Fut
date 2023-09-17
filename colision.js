@@ -82,11 +82,13 @@ function fora(bola) {
                     bola.x = 90;
                     bola.y = 550;
                 }
+                player2.x = bola.x + 30;
+                player2.y = bola.y;
             } else if (team == 'purple') {
                 bola.x = 200;
                 bola.y = 300;
             }
-        }, 100);
+        }, 200);
     } else if (inix > 1130) {
         setTimeout(() => {
             if (team == 'purple') {
@@ -97,10 +99,12 @@ function fora(bola) {
                     bola.x = 1110;
                     bola.y = 550;
                 }
+                player1.x = bola.x - 30;
+                player1.y = bola.y;
             } else if (team == 'orange') {
                 bola.x = 1000;
                 bola.y = 300;
             }
-        }, 100);
+        }, 200);
     }
 }

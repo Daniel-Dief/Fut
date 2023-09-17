@@ -10,7 +10,7 @@ ball.scale.y *= 0.05;
 app.stage.addChild(ball);
 
 function rolar(direction) {
-    for (let i=0;i<20;i++) {
+    for (let i=0;i<15;i++) {
         setTimeout(() => {
             if (direction == 'up') {
                 ball.y -= 10;
