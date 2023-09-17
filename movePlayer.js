@@ -10,28 +10,28 @@ window.addEventListener("keyup", (key) => {
 
 function move(){
     if(keyPress.w){
-        player1.y += -5;
+        player1.y += -3;
     }
     if(keyPress.s){
-        player1.y += 5;
+        player1.y += 3;
     }
     if(keyPress.a){
-        player1.x += -5;
+        player1.x += -3;
     }
     if(keyPress.d){
-        player1.x += 5;
+        player1.x += 3;
     }
     if(keyPress.ArrowUp){
-        player2.y += -5;
+        player2.y += -3;
     }
     if(keyPress.ArrowDown){
-        player2.y += 5;
+        player2.y += 3;
     }
     if(keyPress.ArrowLeft){
-        player2.x += -5;
+        player2.x += -3;
     }
     if(keyPress.ArrowRight){
-        player2.x += 5;
+        player2.x += 3;
     }
 }
 
