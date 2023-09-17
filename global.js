@@ -12,6 +12,18 @@ function positionDefault() {
     player2.x = app.screen.width * 0.55;
     player2.y = app.screen.height / 2;
 
+    teamOrange[0].position.set(300, 200);
+    teamOrange[1].position.set(300, 400);
+    teamOrange[2].position.set(450, 150);
+    teamOrange[3].position.set(450, 300);
+    teamOrange[4].position.set(450, 450);
+
+    teamPurple[0].position.set(900, 200);
+    teamPurple[1].position.set(900, 400);
+    teamPurple[2].position.set(750, 150);
+    teamPurple[3].position.set(750, 300);
+    teamPurple[4].position.set(750, 450);
+
     setTimeout(() => {
         pause = false;
     }, 1000);

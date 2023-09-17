@@ -7,7 +7,9 @@ ball.x = 600;
 ball.scale.x *= 0.05;
 ball.scale.y *= 0.05;
 
-app.stage.addChild(ball);
+setTimeout(() => {
+    app.stage.addChild(ball);
+}, 10);
 
 function rolar(direction) {
     for (let i=0;i<15;i++) {
