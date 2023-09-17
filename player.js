@@ -15,5 +15,8 @@ player1.scale.y *= 0.5;
 player2.scale.x *= 0.5;
 player2.scale.y *= 0.5;
 
+player1.team = 'orange';
+player2.team = 'purple';
+
 app.stage.addChild(player1);
 app.stage.addChild(player2);

@@ -35,5 +35,4 @@ function rolar(direction) {
             }
         }, 15*i);
     }
-    console.log(direction);
 }
