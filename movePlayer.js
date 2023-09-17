@@ -73,4 +73,6 @@ function conduzirP2(){
     }
 }
 
-app.ticker.add(() => move());
+setTimeout(() => {
+    app.ticker.add(() => move());
+}, 200);
