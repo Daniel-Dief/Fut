@@ -47,6 +47,8 @@ function move(){
     if(posse(player2, ball)){
         conduzirP2();
     }
+    pontoP1(ball);
+    pontoP2(ball);
 }
 
 function conduzirP1(){
