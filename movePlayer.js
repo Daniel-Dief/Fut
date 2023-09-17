@@ -33,8 +33,44 @@ function move(){
     if(keyPress.ArrowRight){
         player2.x += 3;
     }
-    posse(player1, ball);
-    posse(player2, ball);
+    if(posse(player1, ball)){
+        conduzirP1();
+    }
+    if(posse(player2, ball)){
+        conduzirP2();
+    }
+}
+
+function conduzirP1(){
+    if(keyPress.w){
+       ball.y = player1.y - 10;
+       ball.x = player1.x;
+    } else if(keyPress.s){
+       ball.y = player1.y + 10;
+       ball.x = player1.x;
+    } else if(keyPress.a){
+       ball.x = player1.x - 10;
+       ball.y = player1.y;
+    } else if(keyPress.d){
+       ball.x = player1.x + 10;
+       ball.y = player1.y;
+    }
+}
+
+function conduzirP2(){
+    if(keyPress.ArrowUp){
+       ball.y = player2.y - 10;
+       ball.x = player2.x;
+    } else if(keyPress.ArrowDown){
+       ball.y = player2.y + 10;
+       ball.x = player2.x;
+    } else if(keyPress.ArrowLeft){
+       ball.x = player2.x - 10;
+       ball.y = player2.y;
+    } else if(keyPress.ArrowRight){
+       ball.x = player2.x + 10;
+       ball.y = player2.y;
+    }
 }
 
 app.ticker.add(() => move());
