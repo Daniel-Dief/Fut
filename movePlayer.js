@@ -5,10 +5,10 @@ let keyLast2;
 window.addEventListener("keydown", (key) => {
     if (!pause) {
         keyPress[key.key] = true;
-        if (key.key == "Shift") {
+        if (key.key == "g" || key.key == "G") {
             chutarP1();
         }
-        if (key.key == "Control") {
+        if (key.key == "l" || key.key == "L") {
             chutarP2();
         }
     }
@@ -20,15 +20,55 @@ window.addEventListener("keyup", (key) => {
 
 function unKeyPress(player){
     if (player == 'P1') {
-        keyPress.w = false;
-        keyPress.s = false;
-        keyPress.a = false;
-        keyPress.d = false;
+        if(keyPress.w){
+            keyPress.w = false;
+            setTimeout(() => {
+                keyPress.w = true;
+            }, 200);
+        }
+        if(keyPress.a){
+            keyPress.a = false;
+            setTimeout(() => {
+                keyPress.a = true;
+            }, 200);
+        }
+        if(keyPress.s){
+            keyPress.s = false;
+            setTimeout(() => {
+                keyPress.s = true;
+            }, 200);
+        }
+        if(keyPress.d){
+            keyPress.d = false;
+            setTimeout(() => {
+                keyPress.d = true;
+            }, 200);
+        }
     } else if (player == 'P2') {
-        keyPress.ArrowUp = false;
-        keyPress.ArrowDown = false;
-        keyPress.ArrowLeft = false;
-        keyPress.ArrowRight = false;
+        if(keyPress.ArrowUp){
+            keyPress.ArrowUp = false;
+            setTimeout(() => {
+                keyPress.ArrowUp = true;
+            }, 200);
+        }
+        if(keyPress.ArrowDown){
+            keyPress.ArrowDown = false;
+            setTimeout(() => {
+                keyPress.ArrowDown = true;
+            }, 200);
+        }
+        if(keyPress.ArrowLeft){
+            keyPress.ArrowLeft = false;
+            setTimeout(() => {
+                keyPress.ArrowLeft = true;
+            }, 200);
+        }
+        if(keyPress.ArrowRight){
+            keyPress.ArrowRight = false;
+            setTimeout(() => {
+                keyPress.ArrowRight = true;
+            }, 200);
+        }
     }
 }
 
