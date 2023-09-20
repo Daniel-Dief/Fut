@@ -55,6 +55,7 @@ app.ticker.add(() => {
 });
 
 /*move teams*/
+
 function moveTeam() {
     if (!pause) {
         /*golero Laranja*/
