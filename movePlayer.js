@@ -3,7 +3,7 @@ let keyLast1;
 let keyLast2;
 
 window.addEventListener("keydown", (key) => {
-    if(key.code == "Space"){
+    if (key.code == "Space") {
         pause = !pause;
     }
     if (!pause) {
@@ -21,52 +21,52 @@ window.addEventListener("keyup", (key) => {
     keyPress[key.key] = false;
 })
 
-function unKeyPress(player){
+function unKeyPress(player) {
     if (player == 'P1') {
-        if(keyPress.w){
+        if (keyPress.w) {
             keyPress.w = false;
             setTimeout(() => {
                 keyPress.w = true;
             }, 20);
         }
-        if(keyPress.a){
+        if (keyPress.a) {
             keyPress.a = false;
             setTimeout(() => {
                 keyPress.a = true;
             }, 20);
         }
-        if(keyPress.s){
+        if (keyPress.s) {
             keyPress.s = false;
             setTimeout(() => {
                 keyPress.s = true;
             }, 20);
         }
-        if(keyPress.d){
+        if (keyPress.d) {
             keyPress.d = false;
             setTimeout(() => {
                 keyPress.d = true;
             }, 20);
         }
     } else if (player == 'P2') {
-        if(keyPress.ArrowUp){
+        if (keyPress.ArrowUp) {
             keyPress.ArrowUp = false;
             setTimeout(() => {
                 keyPress.ArrowUp = true;
             }, 20);
         }
-        if(keyPress.ArrowDown){
+        if (keyPress.ArrowDown) {
             keyPress.ArrowDown = false;
             setTimeout(() => {
                 keyPress.ArrowDown = true;
             }, 20);
         }
-        if(keyPress.ArrowLeft){
+        if (keyPress.ArrowLeft) {
             keyPress.ArrowLeft = false;
             setTimeout(() => {
                 keyPress.ArrowLeft = true;
             }, 20);
         }
-        if(keyPress.ArrowRight){
+        if (keyPress.ArrowRight) {
             keyPress.ArrowRight = false;
             setTimeout(() => {
                 keyPress.ArrowRight = true;
@@ -76,37 +76,40 @@ function unKeyPress(player){
 }
 
 function move() {
-    if (keyPress.w) {
-        player1.y += -3;
+    if (!confShutdown) {
+
+        if (keyPress.w) {
+            player1.y += -3;
+        }
+        if (keyPress.s) {
+            player1.y += 3;
+        }
+        if (keyPress.a) {
+            player1.x += -3;
+        }
+        if (keyPress.d) {
+            player1.x += 3;
+        }
+        if (keyPress.ArrowUp) {
+            player2.y += -3;
+        }
+        if (keyPress.ArrowDown) {
+            player2.y += 3;
+        }
+        if (keyPress.ArrowLeft) {
+            player2.x += -3;
+        }
+        if (keyPress.ArrowRight) {
+            player2.x += 3;
+        }
+        if (posse(player1, ball)) {
+            conduzirP1();
+        }
+        if (posse(player2, ball)) {
+            conduzirP2();
+        }
+        moveTeam();
     }
-    if (keyPress.s) {
-        player1.y += 3;
-    }
-    if (keyPress.a) {
-        player1.x += -3;
-    }
-    if (keyPress.d) {
-        player1.x += 3;
-    }
-    if (keyPress.ArrowUp) {
-        player2.y += -3;
-    }
-    if (keyPress.ArrowDown) {
-        player2.y += 3;
-    }
-    if (keyPress.ArrowLeft) {
-        player2.x += -3;
-    }
-    if (keyPress.ArrowRight) {
-        player2.x += 3;
-    }
-    if (posse(player1, ball)) {
-        conduzirP1();
-    }
-    if (posse(player2, ball)) {
-        conduzirP2();
-    }
-    moveTeam();
 }
 
 function conduzirP1() {

@@ -1,6 +1,10 @@
+const seg = document.querySelector('.timer .seg');
+const min = document.querySelector('.timer .min');
 const placar1 = document.querySelector('.P1');
 const placar2 = document.querySelector('.P2');
+var contTimer = 0;
 var pause = true;
+var confShutdown = false;
 
 function positionDefault() {
     pause = true;
@@ -28,4 +32,21 @@ function positionDefault() {
     setTimeout(() => {
         pause = false;
     }, 1000);
+}
+
+setInterval(() => {
+    if(contTimer == 180){
+        shutdown();
+    }
+    if(parseInt(seg.innerHTML) > 0){
+        seg.innerHTML = parseInt(seg.innerHTML) - 1;
+    } else if(parseInt(min.innerHTML) > 0){
+        seg.innerHTML = 59;
+        min.innerHTML = parseInt(min.innerHTML) - 1;
+    }
+    contTimer++;
+}, 1000);
+
+function shutdown(){
+    confShutdown = true;
 }

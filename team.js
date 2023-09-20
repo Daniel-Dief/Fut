@@ -139,10 +139,8 @@ function moveTeam() {
                 if(teamPurple[i].x > teamOrange[0].x - 100 && teamPurple[i].x < teamOrange[0].x + 100){
                     if(teamPurple[i].y > teamOrange[0].y - 50 && teamPurple[i].y < teamOrange[0].y){
                         teamOrange[i].y += 2;
-                        console.log('range');
                     } else if(teamPurple[i].y < teamOrange[0].y + 50 && teamPurple[i].y > teamOrange[0].y){
                         teamOrange[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamPurple[i].y == teamOrange[0].y){
                         teamOrange[0].y -= 2;
@@ -181,10 +179,8 @@ function moveTeam() {
                 if(teamPurple[i].x > teamOrange[1].x - 100 && teamPurple[i].x < teamOrange[1].x + 100){
                     if(teamPurple[i].y > teamOrange[1].y - 50 && teamPurple[i].y < teamOrange[1].y){
                         teamOrange[i].y += 2;
-                        console.log('range');
                     } else if(teamPurple[i].y < teamOrange[1].y + 50 && teamPurple[i].y > teamOrange[1].y){
                         teamOrange[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamPurple[i].y == teamOrange[1].y){
                         teamOrange[1].y -= 2;
@@ -223,10 +219,8 @@ function moveTeam() {
                 if(teamOrange[i].x > teamPurple[0].x - 100 && teamOrange[i].x < teamPurple[0].x + 100){
                     if(teamOrange[i].y > teamPurple[0].y - 50 && teamOrange[i].y < teamPurple[0].y){
                         teamPurple[i].y += 2;
-                        console.log('range');
                     } else if(teamOrange[i].y < teamPurple[0].y + 50 && teamOrange[i].y > teamPurple[0].y){
                         teamPurple[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamOrange[i].y == teamPurple[0].y){
                         teamPurple[0].y -= 2;
@@ -265,10 +259,8 @@ function moveTeam() {
                 if(teamOrange[i].x > teamPurple[1].x - 100 && teamOrange[i].x < teamPurple[1].x + 100){
                     if(teamOrange[i].y > teamPurple[1].y - 50 && teamOrange[i].y < teamPurple[1].y){
                         teamPurple[i].y += 2;
-                        console.log('range');
                     } else if(teamOrange[i].y < teamPurple[1].y + 50 && teamOrange[i].y > teamPurple[1].y){
                         teamPurple[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamOrange[i].y == teamPurple[1].y){
                         teamPurple[1].y -= 2;
@@ -307,10 +299,8 @@ function moveTeam() {
                 if(teamPurple[i].x > teamOrange[2].x - 100 && teamPurple[i].x < teamOrange[2].x + 100){
                     if(teamPurple[i].y > teamOrange[2].y - 50 && teamPurple[i].y < teamOrange[2].y){
                         teamOrange[i].y += 2;
-                        console.log('range');
                     } else if(teamPurple[i].y < teamOrange[2].y + 50 && teamPurple[i].y > teamOrange[2].y){
                         teamOrange[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamPurple[i].y == teamOrange[2].y){
                         teamOrange[2].y -= 2;
@@ -349,10 +339,8 @@ function moveTeam() {
                 if(teamPurple[i].x > teamOrange[3].x - 100 && teamPurple[i].x < teamOrange[3].x + 100){
                     if(teamPurple[i].y > teamOrange[3].y - 50 && teamPurple[i].y < teamOrange[3].y){
                         teamOrange[i].y += 2;
-                        console.log('range');
                     } else if(teamPurple[i].y < teamOrange[3].y + 50 && teamPurple[i].y > teamOrange[3].y){
                         teamOrange[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamPurple[i].y == teamOrange[3].y){
                         teamOrange[3].y -= 2;
@@ -391,10 +379,8 @@ function moveTeam() {
                 if(teamPurple[i].x > teamOrange[4].x - 100 && teamPurple[i].x < teamOrange[4].x + 100){
                     if(teamPurple[i].y > teamOrange[4].y - 50 && teamPurple[i].y < teamOrange[4].y){
                         teamOrange[i].y += 2;
-                        console.log('range');
                     } else if(teamPurple[i].y < teamOrange[4].y + 50 && teamPurple[i].y > teamOrange[4].y){
                         teamOrange[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamPurple[i].y == teamOrange[4].y){
                         teamOrange[4].y -= 2;
@@ -433,10 +419,8 @@ function moveTeam() {
                 if(teamOrange[i].x > teamPurple[2].x - 100 && teamOrange[i].x < teamPurple[2].x + 100){
                     if(teamOrange[i].y > teamPurple[2].y - 50 && teamOrange[i].y < teamPurple[2].y){
                         teamPurple[i].y += 2;
-                        console.log('range');
                     } else if(teamOrange[i].y < teamPurple[2].y + 50 && teamOrange[i].y > teamPurple[2].y){
                         teamPurple[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamOrange[i].y == teamPurple[2].y){
                         teamPurple[2].y -= 2;
@@ -475,10 +459,8 @@ function moveTeam() {
                 if(teamOrange[i].x > teamPurple[3].x - 100 && teamOrange[i].x < teamPurple[3].x + 100){
                     if(teamOrange[i].y > teamPurple[3].y - 50 && teamOrange[i].y < teamPurple[3].y){
                         teamPurple[i].y += 2;
-                        console.log('range');
                     } else if(teamOrange[i].y < teamPurple[3].y + 50 && teamOrange[i].y > teamPurple[3].y){
                         teamPurple[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamOrange[i].y == teamPurple[3].y){
                         teamPurple[3].y -= 2;
@@ -517,10 +499,8 @@ function moveTeam() {
                 if(teamOrange[i].x > teamPurple[4].x - 100 && teamOrange[i].x < teamPurple[4].x + 100){
                     if(teamOrange[i].y > teamPurple[4].y - 50 && teamOrange[i].y < teamPurple[4].y){
                         teamPurple[i].y += 2;
-                        console.log('range');
                     } else if(teamOrange[i].y < teamPurple[4].y + 50 && teamOrange[i].y > teamPurple[4].y){
                         teamPurple[i].y -= 2;
-                        console.log('range');
                     }
                     if(teamOrange[i].y == teamPurple[4].y){
                         teamPurple[4].y -= 2;
