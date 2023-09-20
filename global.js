@@ -1,8 +1,9 @@
 const placar1 = document.querySelector('.P1');
 const placar2 = document.querySelector('.P2');
-var pause = false;
+var pause = true;
 
 function positionDefault() {
+    pause = true;
     ball.y = 300;
     ball.x = 600;
 

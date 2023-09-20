@@ -3,6 +3,9 @@ let keyLast1;
 let keyLast2;
 
 window.addEventListener("keydown", (key) => {
+    if(key.code == "Space"){
+        pause = !pause;
+    }
     if (!pause) {
         keyPress[key.key] = true;
         if (key.key == "g" || key.key == "G") {

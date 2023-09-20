@@ -20,12 +20,7 @@ function posse(jogador, bola) {
 }
 
 function pontoP1(bola) {
-    let bBordax, bIniy, bBorday;
-    bBordax = bola.x + bola.width;
-    bIniy = bola.y;
-    bBorday = bola.y + bola.height;
-
-    if (bBordax >= 1135 && bIniy >= 255 && bBorday <= 360) {
+    if (bola.x <= 80 && bola.y >= 260 && bola.y <= 360) {
         pause = true;
         positionDefault();
         placar1.innerHTML = parseInt(placar1.innerHTML) + 1;
@@ -33,12 +28,7 @@ function pontoP1(bola) {
 }
 
 function pontoP2(bola) {
-    let bInix, bIniy, bBorday;
-    bInix = bola.x;
-    bIniy = bola.y;
-    bBorday = bola.y + bola.height;
-
-    if (bInix <= 70 && bIniy >= 260 && bBorday <= 360) {
+    if (bola.x >= 1120 && bola.y >= 260 && bola.y <= 360) {
         pause = true;
         positionDefault();
         placar2.innerHTML = parseInt(placar2.innerHTML) + 1;

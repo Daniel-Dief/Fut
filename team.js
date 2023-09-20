@@ -134,6 +134,20 @@ function moveTeam() {
             } else {
                 rolar(teamOrange[0].direction);
             }
+            for(let i=0; i<=5; i++){
+                if(teamPurple[i].x > teamOrange[0].x - 100 && teamPurple[i].x < teamOrange[0].x + 100){
+                    if(teamPurple[i].y > teamOrange[0].y - 50 && teamPurple[i].y < teamOrange[0].y){
+                        teamOrange[i].y += 2;
+                        console.log('range');
+                    } else if(teamPurple[i].y < teamOrange[0].y + 50 && teamPurple[i].y > teamOrange[0].y){
+                        teamOrange[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamPurple[i].y == teamOrange[0].y){
+                        teamOrange[0].y -= 2;
+                    }
+                }
+            }
             if (player2.y > teamOrange[0].y && player2.y < teamOrange[0].y + 50 && teamOrange[0].y > 80) {
                 teamOrange[0].y -= 2;
             }
@@ -161,6 +175,20 @@ function moveTeam() {
                 teamOrange[1].x += 2;
             } else {
                 rolar(teamOrange[1].direction);
+            }
+            for(let i=0; i<=5; i++){
+                if(teamPurple[i].x > teamOrange[1].x - 100 && teamPurple[i].x < teamOrange[1].x + 100){
+                    if(teamPurple[i].y > teamOrange[1].y - 50 && teamPurple[i].y < teamOrange[1].y){
+                        teamOrange[i].y += 2;
+                        console.log('range');
+                    } else if(teamPurple[i].y < teamOrange[1].y + 50 && teamPurple[i].y > teamOrange[1].y){
+                        teamOrange[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamPurple[i].y == teamOrange[1].y){
+                        teamOrange[1].y -= 2;
+                    }
+                }
             }
             if (player2.y > teamOrange[1].y && player2.y < teamOrange[1].y + 50 && teamOrange[1].y > 325) {
                 teamOrange[1].y -= 2;
@@ -190,6 +218,20 @@ function moveTeam() {
             } else {
                 rolar(teamPurple[0].direction);
             }
+            for(let i=0; i<=5; i++){
+                if(teamOrange[i].x > teamPurple[0].x - 100 && teamOrange[i].x < teamPurple[0].x + 100){
+                    if(teamOrange[i].y > teamPurple[0].y - 50 && teamOrange[i].y < teamPurple[0].y){
+                        teamPurple[i].y += 2;
+                        console.log('range');
+                    } else if(teamOrange[i].y < teamPurple[0].y + 50 && teamOrange[i].y > teamPurple[0].y){
+                        teamPurple[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamOrange[i].y == teamPurple[0].y){
+                        teamPurple[0].y -= 2;
+                    }
+                }
+            }
             if (player1.y > teamPurple[0].y && player1.y < teamPurple[0].y + 50 && teamPurple[0].y > 80) {
                 teamPurple[0].y -= 2;
             }
@@ -217,6 +259,20 @@ function moveTeam() {
                 teamPurple[1].x -= 2;
             } else {
                 rolar(teamPurple[1].direction);
+            }
+            for(let i=0; i<=5; i++){
+                if(teamOrange[i].x > teamPurple[1].x - 100 && teamOrange[i].x < teamPurple[1].x + 100){
+                    if(teamOrange[i].y > teamPurple[1].y - 50 && teamOrange[i].y < teamPurple[1].y){
+                        teamPurple[i].y += 2;
+                        console.log('range');
+                    } else if(teamOrange[i].y < teamPurple[1].y + 50 && teamOrange[i].y > teamPurple[1].y){
+                        teamPurple[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamOrange[i].y == teamPurple[1].y){
+                        teamPurple[1].y -= 2;
+                    }
+                }
             }
             if (player1.y > teamPurple[1].y && player1.y < teamPurple[1].y + 50 && teamPurple[1].y > 325) {
                 teamPurple[1].y -= 2;
@@ -246,6 +302,20 @@ function moveTeam() {
             } else {
                 rolar(teamOrange[2].direction);
             }
+            for(let i=0; i<=5; i++){
+                if(teamPurple[i].x > teamOrange[2].x - 100 && teamPurple[i].x < teamOrange[2].x + 100){
+                    if(teamPurple[i].y > teamOrange[2].y - 50 && teamPurple[i].y < teamOrange[2].y){
+                        teamOrange[i].y += 2;
+                        console.log('range');
+                    } else if(teamPurple[i].y < teamOrange[2].y + 50 && teamPurple[i].y > teamOrange[2].y){
+                        teamOrange[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamPurple[i].y == teamOrange[2].y){
+                        teamOrange[2].y -= 2;
+                    }
+                }
+            }
             if (player2.y > teamOrange[2].y && player2.y < teamOrange[2].y + 50 && teamOrange[2].y > 70) {
                 teamOrange[2].y -= 2;
             }
@@ -273,6 +343,20 @@ function moveTeam() {
                 teamOrange[3].x += 2;
             } else {
                 rolar(teamOrange[3].direction);
+            }
+            for(let i=0; i<=5; i++){
+                if(teamPurple[i].x > teamOrange[3].x - 100 && teamPurple[i].x < teamOrange[3].x + 100){
+                    if(teamPurple[i].y > teamOrange[3].y - 50 && teamPurple[i].y < teamOrange[3].y){
+                        teamOrange[i].y += 2;
+                        console.log('range');
+                    } else if(teamPurple[i].y < teamOrange[3].y + 50 && teamPurple[i].y > teamOrange[3].y){
+                        teamOrange[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamPurple[i].y == teamOrange[3].y){
+                        teamOrange[3].y -= 2;
+                    }
+                }
             }
             if (player2.y > teamOrange[3].y && player2.y < teamOrange[3].y + 50 && teamOrange[3].y > 200) {
                 teamOrange[3].y -= 2;
@@ -302,6 +386,20 @@ function moveTeam() {
             } else {
                 rolar(teamOrange[4].direction);
             }
+            for(let i=0; i<=5; i++){
+                if(teamPurple[i].x > teamOrange[4].x - 100 && teamPurple[i].x < teamOrange[4].x + 100){
+                    if(teamPurple[i].y > teamOrange[4].y - 50 && teamPurple[i].y < teamOrange[4].y){
+                        teamOrange[i].y += 2;
+                        console.log('range');
+                    } else if(teamPurple[i].y < teamOrange[4].y + 50 && teamPurple[i].y > teamOrange[4].y){
+                        teamOrange[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamPurple[i].y == teamOrange[4].y){
+                        teamOrange[4].y -= 2;
+                    }
+                }
+            }
             if (player2.y > teamOrange[4].y && player2.y < teamOrange[4].y + 50 && teamOrange[4].y > 400) {
                 teamOrange[4].y -= 2;
             }
@@ -329,6 +427,20 @@ function moveTeam() {
                 teamPurple[2].x += 2;
             } else {
                 rolar(teamPurple[2].direction);
+            }
+            for(let i=0; i<=5; i++){
+                if(teamOrange[i].x > teamPurple[2].x - 100 && teamOrange[i].x < teamPurple[2].x + 100){
+                    if(teamOrange[i].y > teamPurple[2].y - 50 && teamOrange[i].y < teamPurple[2].y){
+                        teamPurple[i].y += 2;
+                        console.log('range');
+                    } else if(teamOrange[i].y < teamPurple[2].y + 50 && teamOrange[i].y > teamPurple[2].y){
+                        teamPurple[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamOrange[i].y == teamPurple[2].y){
+                        teamPurple[2].y -= 2;
+                    }
+                }
             }
             if (player2.y > teamPurple[2].y && player2.y < teamPurple[2].y + 50 && teamPurple[2].y > 70) {
                 teamPurple[2].y -= 2;
@@ -358,6 +470,20 @@ function moveTeam() {
             } else {
                 rolar(teamPurple[3].direction);
             }
+            for(let i=0; i<=5; i++){
+                if(teamOrange[i].x > teamPurple[3].x - 100 && teamOrange[i].x < teamPurple[3].x + 100){
+                    if(teamOrange[i].y > teamPurple[3].y - 50 && teamOrange[i].y < teamPurple[3].y){
+                        teamPurple[i].y += 2;
+                        console.log('range');
+                    } else if(teamOrange[i].y < teamPurple[3].y + 50 && teamOrange[i].y > teamPurple[3].y){
+                        teamPurple[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamOrange[i].y == teamPurple[3].y){
+                        teamPurple[3].y -= 2;
+                    }
+                }
+            }
             if (player2.y > teamPurple[3].y && player2.y < teamPurple[3].y + 50 && teamPurple[3].y > 200) {
                 teamPurple[3].y -= 2;
             }
@@ -385,6 +511,20 @@ function moveTeam() {
                 teamPurple[4].x += 2;
             } else {
                 rolar(teamPurple[4].direction);
+            }
+            for(let i=0; i<=5; i++){
+                if(teamOrange[i].x > teamPurple[4].x - 100 && teamOrange[i].x < teamPurple[4].x + 100){
+                    if(teamOrange[i].y > teamPurple[4].y - 50 && teamOrange[i].y < teamPurple[4].y){
+                        teamPurple[i].y += 2;
+                        console.log('range');
+                    } else if(teamOrange[i].y < teamPurple[4].y + 50 && teamOrange[i].y > teamPurple[4].y){
+                        teamPurple[i].y -= 2;
+                        console.log('range');
+                    }
+                    if(teamOrange[i].y == teamPurple[4].y){
+                        teamPurple[4].y -= 2;
+                    }
+                }
             }
             if (player2.y > teamPurple[4].y && player2.y < teamPurple[4].y + 50 && teamPurple[4].y > 400) {
                 teamPurple[4].y -= 2;
