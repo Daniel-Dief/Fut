@@ -121,7 +121,8 @@ function teamPosse(jTeam, bola) {
     if ((bInix >= jInix && bInix <= jBordax) || (bBordax >= jInix && bBordax <= jBordax)) {
         if ((bIniy >= jIniy && bIniy <= jBorday) || (bBorday >= jIniy && bBorday <= jBorday)) {
             team = jTeam.team;
-            switch (jTeam.keyLast) {
+            jTeam.posse = true;
+            switch (jTeam.direction) {
                 case 'Up':
                     bola.x = jTeam.x;
                     bola.y = jTeam.y - 10;
@@ -142,6 +143,10 @@ function teamPosse(jTeam, bola) {
                 default:
                     break;
             }
+        } else {
+            jTeam.posse = false;
         }
+    } else {
+        jTeam.posse = false;
     }
 }

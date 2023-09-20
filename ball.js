@@ -12,6 +12,7 @@ setTimeout(() => {
 }, 10);
 
 function rolar(direction) {
+    direction = direction.toLowerCase();
     for (let i=0;i<15;i++) {
         setTimeout(() => {
             if (direction == 'up') {

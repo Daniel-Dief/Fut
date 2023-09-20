@@ -24,50 +24,50 @@ function unKeyPress(player){
             keyPress.w = false;
             setTimeout(() => {
                 keyPress.w = true;
-            }, 200);
+            }, 20);
         }
         if(keyPress.a){
             keyPress.a = false;
             setTimeout(() => {
                 keyPress.a = true;
-            }, 200);
+            }, 20);
         }
         if(keyPress.s){
             keyPress.s = false;
             setTimeout(() => {
                 keyPress.s = true;
-            }, 200);
+            }, 20);
         }
         if(keyPress.d){
             keyPress.d = false;
             setTimeout(() => {
                 keyPress.d = true;
-            }, 200);
+            }, 20);
         }
     } else if (player == 'P2') {
         if(keyPress.ArrowUp){
             keyPress.ArrowUp = false;
             setTimeout(() => {
                 keyPress.ArrowUp = true;
-            }, 200);
+            }, 20);
         }
         if(keyPress.ArrowDown){
             keyPress.ArrowDown = false;
             setTimeout(() => {
                 keyPress.ArrowDown = true;
-            }, 200);
+            }, 20);
         }
         if(keyPress.ArrowLeft){
             keyPress.ArrowLeft = false;
             setTimeout(() => {
                 keyPress.ArrowLeft = true;
-            }, 200);
+            }, 20);
         }
         if(keyPress.ArrowRight){
             keyPress.ArrowRight = false;
             setTimeout(() => {
                 keyPress.ArrowRight = true;
-            }, 200);
+            }, 20);
         }
     }
 }
@@ -103,6 +103,7 @@ function move() {
     if (posse(player2, ball)) {
         conduzirP2();
     }
+    moveTeam();
 }
 
 function conduzirP1() {
@@ -167,7 +168,7 @@ function chutarP1() {
             rolar(keyLast1)
         }
     }
-    unKeyPress('P1')
+    unKeyPress('P1');
 }
 
 function chutarP2() {
@@ -192,7 +193,7 @@ function chutarP2() {
             rolar(keyLast2)
         }
     }
-    unKeyPress('P2')
+    unKeyPress('P2');
 }
 
 setInterval(() => {
